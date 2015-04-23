@@ -6,18 +6,8 @@ package com.rshepard.pig;
 
 public class Test {
 
-	/**
-	 * 
-	 */
-	public Test() {
-	
-	}
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		new Game(new Player("Rick"), new Player("opponent")).play();
+		new StartInterFace();
 	}
 
 }

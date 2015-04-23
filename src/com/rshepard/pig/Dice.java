@@ -11,6 +11,11 @@ public class Dice implements Serializable {
 	/**
 	 * 
 	 */
+	private static final long serialVersionUID = -3169607304493447940L;
+
+	/**
+	 * 
+	 */
 	public Dice() {
 		
 	}

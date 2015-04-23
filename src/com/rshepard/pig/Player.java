@@ -8,6 +8,10 @@ import java.io.Serializable;
 
 public class Player implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 83906362855752156L;
 	private String name;
 	private int score;
 
@@ -17,6 +21,7 @@ public class Player implements Serializable {
 	public Player(String name) {
 		this.name = name;
 		score = 0;
+		System.out.println("Player added: " + name);
 	}
 
 	/**
@@ -47,6 +52,11 @@ public class Player implements Serializable {
 	 */
 	public void setScore(int score) {
 		this.score = score;
+	}
+	
+	public String toString() {
+		String info = name + "\nScore: " + score;
+		return info;
 	}
 
 }

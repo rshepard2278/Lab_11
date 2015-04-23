@@ -9,21 +9,18 @@ import java.util.ArrayList;
 
 public class SavedGames implements Serializable {
 
+	private static final long serialVersionUID = 1L;
 	private ArrayList<Game> savedGames;
 	
 	public SavedGames() {
 		savedGames = new ArrayList<>();
 	}
 	
-	public Game getGame(Game game) {
-		return savedGames.get(savedGames.indexOf(game));
-	}
-	
-	public void addGame(Game game) {
+	public void saveGame(Game game) {
 		savedGames.add(game);
 	}
 	
-	public ArrayList<Game> listGames() {
+	public ArrayList<Game> getGames() {
 		return savedGames;
 	}
 
